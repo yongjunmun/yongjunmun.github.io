@@ -115,7 +115,7 @@
                   </div>
                   <span class="item-date">Sep 2025 - Aug 2026</span>
                 </div>
-                <p style="font-size: 0.95rem; color: #4f4f4f; margin: 12px 0;">Part of the Operation Automation team under the guidance of an assigned mentor, assisting the Automation Engineer with automation equipment and upcoming projects.</p>
+                <p style="font-size: 0.95rem; color: #a0a0a0; margin: 12px 0;">Part of the Operation Automation team under the guidance of an assigned mentor, assisting the Automation Engineer with automation equipment and upcoming projects.</p>
                 <ul style="margin-top: 8px;">
                   <li><strong>Key Responsibilities:</strong> Assist in data analytics, design & development of future hardware; support factory automation equipment (AMR, Robotic, OHT, AMHS, Auto-packing Equipment); digitalize equipment operation data for performance monitoring; contribute to advanced automation projects in integration, testing, and system safety.</li>
                   <li><strong>Day-to-Day Operations:</strong> Maintain equipment operations and create Tableau workflows for department performance tracking and visualization.</li>
@@ -197,6 +197,11 @@
                 </div>
                 <ul>
                   <li>Internship role focused on process development and quality checks.</li>
+                  <li>Performed Quality Assurance inspections on components using precision measurement tools and equipment, including Vickers hardness testing.</li>
+                  <li>Prepared metallography samples by epoxy mounting, sectioning and surface preparation to support microstructure/defect evaluation.</li>
+                  <li>Recorded and analysed inspection results against specifications, maintaining accurate QA documentation and traceability.</li>
+                  <li>Supported non-conformance handling by segregating affected lots, documenting defects, and assisting with root-cause investigations and CAPA follow-up.</li>
+                  <li>Worked closely with production/engineering teams to address quality issues and ensure adherence to SOPs and controlled processes.</li>
                 </ul>
               </article>
 
@@ -378,6 +383,7 @@
     <script>
       const navTabs = document.querySelectorAll(".nav-tab");
       const pageSections = document.querySelectorAll(".page-section");
+      const page = document.querySelector(".page");
 
       const setActiveNav = (sectionName) => {
         navTabs.forEach((tab) => {
@@ -387,15 +393,21 @@
         });
       };
 
-      // Scroll to section on nav click
+      // Scroll to section on nav click with transition
       navTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           const sectionName = tab.dataset.section;
           const targetSection = document.querySelector(`[data-page="${sectionName}"]`);
           
           if (targetSection) {
-            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-            setActiveNav(sectionName);
+            // Add transition effect
+            page.classList.add("transitioning");
+            
+            setTimeout(() => {
+              targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+              setActiveNav(sectionName);
+              page.classList.remove("transitioning");
+            }, 300);
           }
         });
       });
