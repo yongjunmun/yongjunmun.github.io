@@ -9,7 +9,7 @@
     >
     <meta name="theme-color" content="#10252f">
     <title>Yong Jun Mun | Automation & Mechatronics</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -82,7 +82,7 @@
         <div class="hero-visual">
           <img
             class="profile-photo"
-            src="yong-jun-mun.jpg"
+            src="assets/yong-jun-mun.jpg"
             alt="Yong Jun Mun standing by the coast"
             width="360"
             height="540"
@@ -224,6 +224,31 @@
           <div class="project-list">
             <article class="project-row">
               <div class="project-copy">
+                <p class="project-context">Personal · Control systems</p>
+                <h3>Inverted Pendulum Control Lab</h3>
+                <p>
+                  A cart-pole simulator that benchmarks cascaded PID, LQR, MPC, and an
+                  energy-shaping swing-up controller on the same plant, actuator limit, and
+                  cost function. The equations of motion, both Riccati solvers, and the
+                  constrained MPC solver are written from scratch in NumPy. Across 169
+                  mismatched plants, LQR and MPC held 84.6% against 55.6% for PID.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>Python</li>
+                  <li>NumPy</li>
+                  <li>LQR / MPC</li>
+                  <li>GitHub Actions</li>
+                </ul>
+              </div>
+              <div class="cartpole-scene" aria-hidden="true">
+                <span class="cartpole-pole"></span>
+                <span class="cartpole-cart"></span>
+                <i class="cartpole-rail"></i>
+              </div>
+            </article>
+
+            <article class="project-row">
+              <div class="project-copy">
                 <p class="project-context">Infineon · Data automation</p>
                 <h3>Maintenance Issue Tracking Bot</h3>
                 <p>
@@ -274,6 +299,40 @@
                 <span style="--bar: 86%"></span>
                 <span style="--bar: 96%"></span>
                 <b></b>
+              </div>
+            </article>
+
+            <article class="project-row">
+              <div class="project-copy">
+                <p class="project-context">Personal · Full-stack engineering</p>
+                <h3>SkyCast Weather Platform</h3>
+                <p>
+                  A Flask progressive web app that scores the best outdoor window across the
+                  next 24 hours and explains every penalty behind the score. Forecast, air
+                  quality, and radar sources are cached, rate limited, and served behind
+                  security headers, with Playwright and Lighthouse budgets running on every
+                  push.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>Flask</li>
+                  <li>REST APIs</li>
+                  <li>Progressive web app</li>
+                  <li>Playwright</li>
+                </ul>
+              </div>
+              <div
+                class="forecast-scene"
+                role="img"
+                aria-label="Hourly forecast bars with the best outdoor window highlighted"
+              >
+                <span style="--bar: 38%"></span>
+                <span style="--bar: 56%"></span>
+                <span style="--bar: 74%"></span>
+                <span style="--bar: 88%"></span>
+                <span style="--bar: 92%"></span>
+                <span style="--bar: 61%"></span>
+                <span style="--bar: 44%"></span>
+                <b class="forecast-window"></b>
               </div>
             </article>
 
@@ -385,11 +444,11 @@
             </div>
             <div>
               <dt>Software and data</dt>
-              <dd>Python, PowerShell, JavaScript, C/C++, SQLite, REST APIs, Tableau, Excel, Outlook automation, OpenCV</dd>
+              <dd>Python, NumPy, Flask, PowerShell, JavaScript, C/C++, SQLite, REST APIs, Tableau, Excel, Outlook automation, OpenCV</dd>
             </div>
             <div>
-              <dt>Embedded and design</dt>
-              <dd>SolidWorks, CAD, RTOS, Arduino, ARM Assembly, SPI, I2C, GPIO</dd>
+              <dt>Control and embedded</dt>
+              <dd>PID, LQR, MPC, state-space modelling, SolidWorks, CAD, RTOS, Arduino, ARM Assembly, SPI, I2C, GPIO</dd>
             </div>
             <div>
               <dt>Operations tooling</dt>
