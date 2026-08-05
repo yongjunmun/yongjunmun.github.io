@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Portfolio of Yong Jun Mun, a Mechatronics Systems undergraduate and Automation Engineer Intern focused on factory automation, test engineering, and data tools."
+      content="Yong Jun Mun is a Mechatronics Systems undergraduate and Automation Engineer Intern working across factory automation, controls, equipment reliability, test engineering, and software."
     >
-    <meta name="theme-color" content="#10252f">
+    <meta name="theme-color" content="#081f27">
+    <meta property="og:title" content="Yong Jun Mun | Automation & Mechatronics">
+    <meta
+      property="og:description"
+      content="Production automation, control systems, equipment reliability, and practical engineering software."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yongjunmun.github.io/YongJunMun_Resume/">
+    <meta
+      property="og:image"
+      content="https://yongjunmun.github.io/YongJunMun_Resume/assets/yong-jun-mun.jpg"
+    >
+    <link rel="canonical" href="https://yongjunmun.github.io/YongJunMun_Resume/">
     <title>Yong Jun Mun | Automation & Mechatronics</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -24,7 +37,10 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Yong Jun Mun, home">
         <span class="brand-mark" aria-hidden="true">YJ</span>
-        <span class="brand-name">Yong Jun Mun</span>
+        <span class="brand-copy">
+          <strong class="brand-name">Yong Jun Mun</strong>
+          <small>Automation · Controls · Software</small>
+        </span>
       </a>
 
       <button
@@ -42,57 +58,81 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="#contact">Start a conversation</a>
       </nav>
     </header>
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
+          <p class="section-code">00 / Profile</p>
           <p class="hero-status">
             <span aria-hidden="true"></span>
-            Automation Engineer Intern at Infineon Technologies
+            Singapore · Infineon · Internship through Aug 2026
           </p>
           <h1 id="hero-title">
-            Building reliable automation
-            <strong>from the production floor up.</strong>
+            I make automation
+            <strong>easier to recover, verify, and trust.</strong>
           </h1>
           <p class="hero-summary">
-            I am a Mechatronics Systems undergraduate working across factory automation,
-            test engineering, equipment recovery, and data tools. I turn unfamiliar systems
-            into verified procedures, useful dashboards, and safer production workflows.
+            I am a Mechatronics Systems undergraduate working where equipment, controls,
+            operations, and software meet. I turn unfamiliar production systems into
+            repeatable recovery steps, defensible test evidence, and tools people can act on.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#experience">Explore my work</a>
+            <a class="button button-primary" href="#experience">View production work</a>
             <a
               class="button button-secondary"
               href="https://github.com/yongjunmun"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View GitHub
+              Explore repositories
             </a>
           </div>
-          <p class="hero-proof">
-            Recent work includes 50+ UAT cases, three equipment OJTIs, live OHV analytics,
-            and production support for AMHS, ASRS, AMR/AGV, and packing systems.
-          </p>
+          <dl class="hero-metrics" aria-label="Selected work metrics">
+            <div>
+              <dt>50+</dt>
+              <dd>UAT cases designed and executed</dd>
+            </div>
+            <div>
+              <dt>7</dt>
+              <dd>Live OHV reliability views</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>Controlled equipment OJTIs</dd>
+            </div>
+            <div>
+              <dt>36</dt>
+              <dd>Priority 1 items in alert workflow</dd>
+            </div>
+          </dl>
         </div>
 
-        <div class="hero-visual">
-          <img
-            class="profile-photo"
-            src="assets/yong-jun-mun.jpg"
-            alt="Yong Jun Mun standing by the coast"
-            width="360"
-            height="540"
-          >
-        </div>
+        <figure class="hero-visual">
+          <div class="portrait-frame">
+            <img
+              class="profile-photo"
+              src="assets/yong-jun-mun.jpg"
+              alt="Yong Jun Mun standing by the coast"
+              width="360"
+              height="540"
+            >
+          </div>
+          <figcaption>
+            <strong>Yong Jun Mun</strong>
+            <span>BEng (Hons), Mechatronics Systems · 2027</span>
+          </figcaption>
+        </figure>
       </section>
 
       <section class="systems-scope" aria-labelledby="systems-title">
         <div class="section-shell systems-layout">
-          <h2 id="systems-title">Systems I support</h2>
+          <div>
+            <p class="section-code">Field systems</p>
+            <h2 id="systems-title">Production automation I work around</h2>
+          </div>
           <ul>
             <li>AMHS</li>
             <li>ASRS</li>
@@ -109,6 +149,7 @@
       <section class="section-block experience-section" id="experience" aria-labelledby="experience-title">
         <div class="section-shell">
           <header class="section-heading">
+            <p class="section-code">01 / Production work</p>
             <h2 id="experience-title">Experience that moves systems into production</h2>
             <p>
               My work combines first-response equipment support with structured verification,
@@ -121,13 +162,14 @@
               <p class="experience-date">Sep 2025 - Aug 2026</p>
               <h3>Automation Engineer Intern</h3>
               <p>Infineon Technologies Asia Pacific Pte Ltd</p>
+              <p class="experience-location">Singapore · Semiconductor manufacturing</p>
               <a
                 class="text-link"
                 href="https://www.infineon.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Semiconductor manufacturing
+                Visit Infineon
                 <span aria-hidden="true">&nearr;</span>
               </a>
             </div>
@@ -180,6 +222,7 @@
           </article>
 
           <div class="earlier-experience" role="region" aria-label="Earlier experience">
+            <p class="earlier-label">Earlier experience</p>
             <article>
               <p class="experience-date">Mar 2020 - Aug 2020</p>
               <h3>Process Development Engineer Intern</h3>
@@ -214,14 +257,56 @@
       <section class="section-block projects-section" id="projects" aria-labelledby="projects-title">
         <div class="section-shell">
           <header class="section-heading">
+            <p class="section-code">02 / Engineering evidence</p>
             <h2 id="projects-title">Selected engineering and software projects</h2>
             <p>
-              Each project starts with a real workflow problem and ends with something people
-              can test, operate, or act on.
+              Completed work with measured results, reproducible tests, and stated limitations.
+              The strongest examples stay close to automation, controls, and robotics.
             </p>
           </header>
 
           <div class="project-list">
+            <article class="project-row featured-project">
+              <div class="project-copy">
+                <p class="project-context">Personal · Semiconductor automation</p>
+                <h3>AMHS Fleet Simulator</h3>
+                <p>
+                  A discrete-event model of a semiconductor-fab OHT loop that tests where
+                  adding vehicles stops helping. Throughput stayed effectively flat from 6
+                  to 21 vehicles; cycle time reached 123.1 seconds at 13 vehicles, then rose
+                  34.1% by 21 as blocked fleet-time increased.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>Python</li>
+                  <li>Discrete-event simulation</li>
+                  <li>Queueing theory</li>
+                  <li>28 tests</li>
+                </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/AMHS-Fleet-Simulator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read the measured study <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+              <div
+                class="fleet-scene"
+                role="img"
+                aria-label="AMHS fleet study showing a 13-vehicle cycle-time minimum of 123.1 seconds"
+              >
+                <div class="fleet-track" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="fleet-readout">
+                  <span>Fleet-size knee</span>
+                  <strong>13 vehicles</strong>
+                  <small>123.1 s cycle time</small>
+                </div>
+              </div>
+            </article>
+
             <article class="project-row">
               <div class="project-copy">
                 <p class="project-context">Personal · Control systems</p>
@@ -239,11 +324,55 @@
                   <li>LQR / MPC</li>
                   <li>GitHub Actions</li>
                 </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Inverted-Pendulum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Inspect controllers and results <span aria-hidden="true">&nearr;</span>
+                </a>
               </div>
               <div class="cartpole-scene" aria-hidden="true">
                 <span class="cartpole-pole"></span>
                 <span class="cartpole-cart"></span>
                 <i class="cartpole-rail"></i>
+              </div>
+            </article>
+
+            <article class="project-row">
+              <div class="project-copy">
+                <p class="project-context">Personal · Robotics and computer vision</p>
+                <h3>ArUco AMR Visual Docking</h3>
+                <p>
+                  A ground-truthed pose-estimation and closed-loop docking study. The naive
+                  apparent-width estimator reached 99.8% range error at 60° marker yaw;
+                  solvePnP stayed within 0.42% and docked with 3.9 cm final position error.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>OpenCV</li>
+                  <li>solvePnP</li>
+                  <li>EKF sensor fusion</li>
+                  <li>41 tests</li>
+                </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/ArUco-AMR-Docking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Review the docking experiments <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+              <div
+                class="docking-scene"
+                role="img"
+                aria-label="AMR following a vision cone toward an ArUco docking marker with 3.9 centimetre final error"
+              >
+                <span class="dock-marker" aria-hidden="true"></span>
+                <span class="dock-robot" aria-hidden="true"></span>
+                <i class="vision-cone" aria-hidden="true"></i>
+                <b>3.9 cm</b>
               </div>
             </article>
 
@@ -262,6 +391,14 @@
                   <li>Regular expressions</li>
                   <li>Excel</li>
                 </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Whatsapp-To-Excel-Bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View the sanitized template <span aria-hidden="true">&nearr;</span>
+                </a>
               </div>
               <div
                 class="project-diagram"
@@ -291,6 +428,7 @@
                   <li>Live data</li>
                   <li>Task Scheduler</li>
                 </ul>
+                <p class="project-note">Internal production work · no public data</p>
               </div>
               <div class="project-chart" aria-hidden="true">
                 <span style="--bar: 78%"></span>
@@ -319,6 +457,14 @@
                   <li>Progressive web app</li>
                   <li>Playwright</li>
                 </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Weather_Website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Explore SkyCast <span aria-hidden="true">&nearr;</span>
+                </a>
               </div>
               <div
                 class="forecast-scene"
@@ -351,6 +497,14 @@
                   <li>REST APIs</li>
                   <li>Manifest V3</li>
                 </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Job_Application"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View the local-first application <span aria-hidden="true">&nearr;</span>
+                </a>
               </div>
               <div
                 class="project-terminal"
@@ -381,6 +535,14 @@
                   <li>Streaming</li>
                   <li>Accessible UI</li>
                 </ul>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Chrome-AI-Assistant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Inspect the extension <span aria-hidden="true">&nearr;</span>
+                </a>
               </div>
               <div class="provider-orbit" aria-hidden="true">
                 <span class="orbit-core">AI</span>
@@ -402,6 +564,7 @@
                   <li>Segger</li>
                   <li>Ultrasonic sensors</li>
                 </ul>
+                <p class="project-note">SIT academic project</p>
               </div>
               <div class="robot-route" aria-hidden="true">
                 <span></span>
@@ -426,6 +589,7 @@
       <section class="section-block skills-section" id="skills" aria-labelledby="skills-title">
         <div class="section-shell">
           <header class="section-heading">
+            <p class="section-code">03 / Capabilities</p>
             <h2 id="skills-title">A toolkit across mechanics, controls, and data</h2>
             <p>
               I am most effective when a problem crosses disciplinary boundaries and needs
@@ -444,11 +608,11 @@
             </div>
             <div>
               <dt>Software and data</dt>
-              <dd>Python, NumPy, Flask, PowerShell, JavaScript, C/C++, SQLite, REST APIs, Tableau, Excel, Outlook automation, OpenCV</dd>
+              <dd>Python, NumPy, Flask, PowerShell, JavaScript, C/C++, SQLite, REST APIs, Tableau, Excel, discrete-event simulation</dd>
             </div>
             <div>
               <dt>Control and embedded</dt>
-              <dd>PID, LQR, MPC, state-space modelling, SolidWorks, CAD, RTOS, Arduino, ARM Assembly, SPI, I2C, GPIO</dd>
+              <dd>PID, LQR, MPC, state-space modelling, queueing theory, EKF, OpenCV, solvePnP, RTOS, Arduino, SPI, I2C, GPIO</dd>
             </div>
             <div>
               <dt>Operations tooling</dt>
@@ -466,6 +630,7 @@
         <div class="section-shell education-layout">
           <div>
             <header class="section-heading compact-heading">
+              <p class="section-code">04 / Foundation</p>
               <h2 id="education-title">Education</h2>
             </header>
             <div class="education-list">
@@ -484,6 +649,7 @@
 
           <div>
             <header class="section-heading compact-heading">
+              <p class="section-code">Verified credentials</p>
               <h2>Credentials</h2>
             </header>
             <ul class="credentials-list">
@@ -515,10 +681,11 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="section-shell contact-layout">
           <div>
-            <h2 id="contact-title">Interested in dependable automation?</h2>
+            <p class="section-code">05 / Contact</p>
+            <h2 id="contact-title">Let’s build systems that fail clearly and recover safely.</h2>
             <p>
-              I am always open to conversations about automation engineering, mechatronics,
-              test and validation, reliability, and practical data tools.
+              I am open to graduate and early-career opportunities across automation,
+              mechatronics, controls, test engineering, reliability, and industrial software.
             </p>
           </div>
           <div class="contact-actions">
@@ -531,6 +698,14 @@
             >
               LinkedIn
             </a>
+            <a
+              class="button button-outline-light"
+              href="https://github.com/yongjunmun"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </section>
@@ -539,7 +714,7 @@
     <footer class="site-footer">
       <div class="section-shell footer-layout">
         <p>&copy; <span id="current-year">2026</span> Yong Jun Mun</p>
-        <p>Designed for clarity, built with plain HTML, CSS, and JavaScript.</p>
+        <p>Singapore · Automation, controls, and practical software</p>
       </div>
     </footer>
 

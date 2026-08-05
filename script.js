@@ -2,6 +2,7 @@ const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".primary-navigation");
 const navigationLinks = [...document.querySelectorAll(".primary-navigation a[href^='#']")];
 const sections = [...document.querySelectorAll("main section[id]")];
+const siteHeader = document.querySelector(".site-header");
 
 const closeMenu = () => {
   menuButton.setAttribute("aria-expanded", "false");
@@ -56,10 +57,48 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
+const updateHeaderState = () => {
+  siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+};
+
+updateHeaderState();
+window.addEventListener("scroll", updateHeaderState, { passive: true });
+
+const revealItems = [
+  ...document.querySelectorAll(
+    ".section-heading, .workstream, .earlier-experience article, .project-row, .skill-matrix > div, .education-list article, .credentials-list li",
+  ),
+];
+
+if ("IntersectionObserver" in window && revealItems.length > 0) {
+  document.documentElement.classList.add("reveal-ready");
+  revealItems.forEach((item) => item.classList.add("reveal-item"));
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px -8% 0px",
+      threshold: 0.08,
+    },
+  );
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
+
 window.addEventListener("resize", () => {
   if (window.innerWidth > 992) {
     closeMenu();
   }
 });
 
-document.querySelector("#current-year").textContent = String(new Date().getFullYear());
+const currentYear = document.querySelector("#current-year");
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
+}

@@ -1,6 +1,7 @@
 # Yong Jun Mun — Automation & Mechatronics Portfolio
 
-A responsive personal portfolio showcasing my experience in factory automation, mechatronics, equipment reliability, test engineering, and practical data tools.
+A responsive engineering portfolio showcasing factory automation, controls,
+equipment reliability, test engineering, robotics, and practical software.
 
 [View the live portfolio](https://yongjunmun.github.io/YongJunMun_Resume/)
 
@@ -11,16 +12,20 @@ The portfolio highlights:
 - Automation engineering experience at Infineon Technologies
 - Production support across AMHS, ASRS, AMR/AGV, OHT/OHV, stocker, feeder, packing, and strapping systems
 - UAT, FMEA, RCA, exception testing, equipment recovery, and technical handover work
-- Engineering and software projects using Python, PowerShell, JavaScript, SQLite, Tableau, Excel, OpenCV, and browser APIs
+- Source-backed project evidence from the AMHS fleet, inverted-pendulum, ArUco docking, SkyCast, job-search, WhatsApp-to-Excel, and Chrome extension repositories
 - Education, credentials, technical skills, and contact links
 
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts
+- Quantified work evidence visible in the opening viewport
+- Direct links to completed, public engineering repositories
+- Engineering field-notebook visual language with measured diagrams rather than stock illustrations
 - Semantic HTML landmarks and heading structure
 - Keyboard-accessible navigation and a skip link
 - Mobile menu with Escape-key support
 - Visible focus styles and reduced-motion support
+- Progressive reveal effects that leave content visible when JavaScript is unavailable
 - Print-friendly styling
 - Automatic copyright-year update
 - No framework, package manager, build step, analytics, or client-side data collection
@@ -42,6 +47,7 @@ The portfolio highlights:
 ├── README.md
 ├── script.js
 ├── style.css
+├── design.css
 └── yong-jun-mun.jpg
 ```
 
@@ -70,7 +76,7 @@ For the `YongJunMun_Resume` repository, the project-site URL is:
 ## Updating the portfolio
 
 - Edit page content and links in `index.html`.
-- Adjust colors, spacing, breakpoints, and visual components in `style.css`.
+- Keep `style.css` as the stable base layer and make redesign changes in `design.css`.
 - Update navigation behavior in `script.js`.
 - Replace `yong-jun-mun.jpg` while keeping the same filename, or update its path and dimensions in `index.html`.
 - If you later offer a downloadable resume, add the PDF to the repository only after reviewing every detail for public release.
