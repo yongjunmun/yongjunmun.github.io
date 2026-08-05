@@ -260,12 +260,58 @@
             <p class="section-code">02 / Engineering evidence</p>
             <h2 id="projects-title">Engineering work and complete repository index</h2>
             <p>
-              All 11 public repositories are represented. The strongest automation, controls,
+              All 12 public repositories are represented. The strongest automation, controls,
               and robotics studies lead; early-stage and side projects are clearly labelled.
             </p>
           </header>
 
           <div class="project-list">
+            <article class="project-row featured-project">
+              <div class="project-copy">
+                <p class="project-context">Personal · Industrial automation</p>
+                <h3>PLC Vision Production Cell</h3>
+                <p>
+                  A dependency-free digital commissioning simulator for a PLC-style conveyor
+                  inspection cell. It models state sequencing, stopped-state permissives,
+                  alarms and guarded recovery, deterministic PASS/FAIL/UNCERTAIN inspection,
+                  motion-relative reject timing, SQLite traceability, and a live browser HMI.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>Python</li>
+                  <li>PLC state machine</li>
+                  <li>HMI / SQLite</li>
+                  <li>96 tests</li>
+                </ul>
+                <p class="project-note">Digital simulator · no hardware or safety validation claimed</p>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/PLC-Vision-Production-Cell"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Commission the simulated cell <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+              <div
+                class="cell-scene"
+                role="img"
+                aria-label="Simulated conveyor flowing through entry, inspection, and reject stations with healthy interlocks"
+              >
+                <div class="cell-stations" aria-hidden="true">
+                  <span><small>01</small>Entry</span>
+                  <i></i>
+                  <span><small>02</small>Inspect</span>
+                  <i></i>
+                  <span><small>03</small>Reject</span>
+                </div>
+                <div class="cell-readout">
+                  <span>Interlocks</span>
+                  <strong>8 / 8 healthy</strong>
+                  <small>STOPPED · ready for separate Start</small>
+                </div>
+              </div>
+            </article>
+
             <article class="project-row featured-project">
               <div class="project-copy">
                 <p class="project-context">Personal · Semiconductor automation</p>

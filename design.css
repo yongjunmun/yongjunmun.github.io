@@ -748,13 +748,13 @@ body {
   border-color: rgba(98, 214, 209, 0.62);
 }
 
-.project-row:nth-child(n + 4) {
+.project-row:nth-child(n + 5) {
   align-content: start;
   gap: 0;
   padding: 1.6rem;
 }
 
-.project-row:nth-child(n + 4) > :last-child:not(.project-copy) {
+.project-row:nth-child(n + 5) > :last-child:not(.project-copy) {
   display: none;
 }
 
@@ -762,11 +762,11 @@ body {
   border-left: 3px solid rgba(98, 214, 209, 0.42);
 }
 
-.project-row:nth-child(n + 4) .project-copy h3 {
+.project-row:nth-child(n + 5) .project-copy h3 {
   font-size: clamp(1.55rem, 2.8vw, 2.25rem);
 }
 
-.project-row:nth-child(n + 4) .project-copy > p:not(.project-context, .project-note) {
+.project-row:nth-child(n + 5) .project-copy > p:not(.project-context, .project-note) {
   font-size: 0.86rem;
 }
 
@@ -855,6 +855,83 @@ body {
   background:
     linear-gradient(90deg, transparent 49.7%, rgba(98, 214, 209, 0.08) 50%, transparent 50.3%),
     linear-gradient(transparent 49.7%, rgba(98, 214, 209, 0.08) 50%, transparent 50.3%);
+}
+
+/* PLC vision cell diagram */
+.cell-scene {
+  position: relative;
+  min-height: 18rem;
+  display: grid;
+  align-content: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(98, 214, 209, 0.16);
+  background:
+    linear-gradient(90deg, transparent 49.7%, rgba(98, 214, 209, 0.08) 50%, transparent 50.3%),
+    linear-gradient(transparent 49.7%, rgba(98, 214, 209, 0.08) 50%, transparent 50.3%);
+}
+
+.cell-stations {
+  display: grid;
+  grid-template-columns: 1fr 2rem 1fr 2rem 1fr;
+  align-items: center;
+}
+
+.cell-stations span {
+  min-height: 4.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0.55rem;
+  color: #f7faf8;
+  border: 1px solid var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  text-align: center;
+}
+
+.cell-stations small {
+  color: var(--signal);
+  font-size: 0.56rem;
+}
+
+.cell-stations i {
+  position: relative;
+  height: 1px;
+  background: var(--cyan);
+}
+
+.cell-stations i::after {
+  position: absolute;
+  top: -0.23rem;
+  right: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-top: 1px solid var(--cyan);
+  border-right: 1px solid var(--cyan);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.cell-readout {
+  display: grid;
+  gap: 0.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-dark);
+  color: #fff;
+  font-family: var(--font-mono);
+}
+
+.cell-readout span,
+.cell-readout small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.57rem;
+  text-transform: uppercase;
+}
+
+.cell-readout strong {
+  color: var(--cyan);
+  font-size: 1rem;
 }
 
 .fleet-track {
@@ -1372,7 +1449,7 @@ body {
     padding: 1.35rem;
   }
 
-  .project-row:nth-child(n + 4) {
+  .project-row:nth-child(n + 5) {
     padding: 1.25rem;
   }
 
@@ -1381,6 +1458,7 @@ body {
   }
 
   .fleet-scene,
+  .cell-scene,
   .docking-scene {
     min-height: 13rem;
   }
@@ -1388,6 +1466,14 @@ body {
   .fleet-track {
     width: 11.2rem;
     height: 7rem;
+  }
+
+  .cell-scene {
+    padding: 1rem;
+  }
+
+  .cell-stations {
+    grid-template-columns: 1fr 1rem 1fr 1rem 1fr;
   }
 
   .dock-marker {

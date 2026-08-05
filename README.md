@@ -12,7 +12,7 @@ The portfolio highlights:
 - Automation engineering experience at Infineon Technologies
 - Production support across AMHS, ASRS, AMR/AGV, OHT/OHV, stocker, feeder, packing, and strapping systems
 - UAT, FMEA, RCA, exception testing, equipment recovery, and technical handover work
-- Source-backed project evidence covering all 11 public GitHub repositories, with early-stage and side projects labelled explicitly
+- Source-backed project evidence covering all 12 public GitHub repositories, with early-stage and side projects labelled explicitly
 - Education, credentials, technical skills, and contact links
 
 ## Features
