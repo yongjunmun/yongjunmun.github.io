@@ -728,7 +728,7 @@ body {
   top: 0.85rem;
   right: 1rem;
   color: rgba(98, 214, 209, 0.5);
-  content: "P-0" counter(project);
+  content: "P-" counter(project, decimal-leading-zero);
   font-family: var(--font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.08em;
@@ -754,8 +754,12 @@ body {
   padding: 1.6rem;
 }
 
-.project-row:nth-child(n + 4) > :last-child {
+.project-row:nth-child(n + 4) > :last-child:not(.project-copy) {
   display: none;
+}
+
+.repository-only {
+  border-left: 3px solid rgba(98, 214, 209, 0.42);
 }
 
 .project-row:nth-child(n + 4) .project-copy h3 {

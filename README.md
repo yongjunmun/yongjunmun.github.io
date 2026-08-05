@@ -12,14 +12,14 @@ The portfolio highlights:
 - Automation engineering experience at Infineon Technologies
 - Production support across AMHS, ASRS, AMR/AGV, OHT/OHV, stocker, feeder, packing, and strapping systems
 - UAT, FMEA, RCA, exception testing, equipment recovery, and technical handover work
-- Source-backed project evidence from the AMHS fleet, inverted-pendulum, ArUco docking, SkyCast, job-search, WhatsApp-to-Excel, and Chrome extension repositories
+- Source-backed project evidence covering all 11 public GitHub repositories, with early-stage and side projects labelled explicitly
 - Education, credentials, technical skills, and contact links
 
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts
 - Quantified work evidence visible in the opening viewport
-- Direct links to completed, public engineering repositories
+- Direct links to all public repositories
 - Engineering field-notebook visual language with measured diagrams rather than stock illustrations
 - Semantic HTML landmarks and heading structure
 - Keyboard-accessible navigation and a skip link
