@@ -93,6 +93,14 @@ For the `YongJunMun_Resume` repository, the project-site URL is:
 
 Everything committed to this repository—including the portrait, email address, employment details, and any resume PDF—will be publicly accessible through GitHub and GitHub Pages. Do not commit private contact details, credentials, confidential employer information, or files that are not intended for public distribution.
 
+## Licence
+
+The site code — HTML, CSS and JavaScript — is [MIT](LICENSE) licensed. Reuse the layout,
+the accessibility work and the build-free structure freely.
+
+The written content, career history, credentials and the portrait photograph are not
+offered for reuse. Fork the code, not the biography.
+
 ## Contact
 
 - [GitHub](https://github.com/yongjunmun)
