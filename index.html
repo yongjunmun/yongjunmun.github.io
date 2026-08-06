@@ -30,6 +30,7 @@
     >
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="print.css" media="print">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -65,6 +66,11 @@
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
+          <p class="print-only print-name">Yong Jun Mun</p>
+          <p class="print-only print-contact">
+            junmun234@gmail.com · linkedin.com/in/yong-jun-mun · github.com/yongjunmun
+            · yongjunmun.github.io/YongJunMun_Resume
+          </p>
           <p class="section-code">00 / Profile</p>
           <p class="hero-status">
             <span aria-hidden="true"></span>
@@ -89,6 +95,9 @@
             >
               Explore repositories
             </a>
+            <button class="button button-secondary print-cv" type="button">
+              Save CV as PDF
+            </button>
           </div>
           <dl class="hero-metrics" aria-label="Selected work metrics">
             <div>
@@ -267,7 +276,7 @@
           </header>
 
           <div class="project-list">
-            <article class="project-row featured-project">
+            <article class="project-row featured-project cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Industrial automation</p>
                 <h3>PLC Vision Production Cell</h3>
@@ -313,7 +322,7 @@
               </div>
             </article>
 
-            <article class="project-row featured-project">
+            <article class="project-row featured-project cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Semiconductor automation</p>
                 <h3>AMHS Fleet Simulator</h3>
@@ -354,7 +363,7 @@
               </div>
             </article>
 
-            <article class="project-row">
+            <article class="project-row cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Control systems</p>
                 <h3>Inverted Pendulum Control Lab</h3>
@@ -387,7 +396,7 @@
               </div>
             </article>
 
-            <article class="project-row">
+            <article class="project-row cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Robotics and computer vision</p>
                 <h3>ArUco AMR Visual Docking</h3>
@@ -620,7 +629,7 @@
               </div>
             </article>
 
-            <article class="project-row repository-only">
+            <article class="project-row repository-only cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Full-stack marketplace</p>
                 <h3>E-Commerce Website</h3>
@@ -647,7 +656,7 @@
               </div>
             </article>
 
-            <article class="project-row repository-only">
+            <article class="project-row repository-only cv-highlight">
               <div class="project-copy">
                 <p class="project-context">Personal · Low-latency systems</p>
                 <h3>Limit Order Book &amp; Matching Engine</h3>

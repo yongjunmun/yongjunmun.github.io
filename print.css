@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+/* Print styles: render the portfolio as a CV.
+   Loaded last so it wins over the partial print rules in style.css and design.css. */
+
+@page {
+  size: A4;
+  margin: 13mm 12mm 14mm;
+}
+
+/* The reveal animation leaves anything never scrolled into view at opacity 0,
+   which otherwise prints as blank pages. */
+.reveal-ready .reveal-item,
+.reveal-ready .reveal-item.is-visible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+*,
+*::before,
+*::after {
+  background: transparent !important;
+  color: #111 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html,
+body {
+  background: #fff !important;
+  font-size: 9.5pt;
+  line-height: 1.38;
+}
+
+/* Screen furniture and navigation carry nothing on paper. */
+.site-header,
+.site-footer,
+.skip-link,
+.hero-actions,
+.systems-scope,
+.section-code,
+.print-cv,
+.text-link,
+.project-link,
+.contact-actions {
+  display: none !important;
+}
+
+/* Project illustrations are CSS-drawn scenes; they print as noise. */
+.project-row [role="img"],
+.project-row [aria-hidden="true"],
+.cell-scene,
+.cartpole-scene,
+.vision-cone {
+  display: none !important;
+}
+
+.print-only {
+  display: block !important;
+}
+
+/* --- Header --------------------------------------------------------------- */
+
+.hero,
+.section-block {
+  min-height: 0 !important;
+  padding: 0 0 4mm !important;
+  margin: 0 !important;
+  break-inside: auto;
+}
+
+.section-shell,
+.contact-layout,
+.hero-copy {
+  max-width: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  gap: 0 !important;
+  display: block !important;
+}
+
+.hero {
+  display: block !important;
+}
+
+/* The photo and its caption are replaced by the print-only name block. */
+.hero figure {
+  display: none !important;
+}
+
+.print-name {
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.hero-status {
+  font-size: 9pt;
+  letter-spacing: 0.04em;
+  margin: 0 0 2mm;
+}
+
+#hero-title {
+  font-size: 13pt;
+  line-height: 1.25;
+  margin: 0 0 2mm;
+}
+
+.hero-copy > p {
+  margin: 0 0 2mm;
+}
+
+.print-only.print-contact {
+  font-size: 9pt;
+  margin: 0 0 2.5mm;
+  padding-bottom: 2mm;
+  border-bottom: 0.6pt solid #999;
+}
+
+.hero-metrics {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 3mm;
+  margin: 3mm 0 0;
+}
+
+.hero-metrics dt {
+  font-size: 13pt;
+  font-weight: 700;
+}
+
+.hero-metrics dd {
+  font-size: 8pt;
+  margin: 0;
+}
+
+/* --- Section headings ----------------------------------------------------- */
+
+h2 {
+  font-size: 12pt;
+  margin: 0 0 2mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.6pt solid #333;
+  break-after: avoid;
+}
+
+h3 {
+  font-size: 10.5pt;
+  margin: 0 0 1mm;
+  break-after: avoid;
+}
+
+h4 {
+  font-size: 9.5pt;
+  margin: 0 0 1mm;
+  break-after: avoid;
+}
+
+/* --- Experience ----------------------------------------------------------- */
+
+.featured-experience,
+.earlier-experience article,
+.project-row,
+.education-list article {
+  break-inside: avoid;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 2.5mm !important;
+}
+
+.workstream {
+  margin: 0 0 1.8mm;
+  break-inside: avoid;
+}
+
+.workstreams {
+  display: block !important;
+  gap: 0 !important;
+}
+
+.workstream p,
+.project-copy p {
+  margin: 0 0 1mm;
+}
+
+.workstream-tools,
+.project-context,
+.project-note,
+.experience-location {
+  font-size: 8pt;
+  font-style: italic;
+}
+
+/* --- Projects ------------------------------------------------------------- */
+
+/* A CV should not run to fifteen projects. Only the flagged highlights print. */
+.project-row:not(.cv-highlight) {
+  display: none !important;
+}
+
+.project-list {
+  display: block !important;
+  gap: 0 !important;
+}
+
+.project-stack {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 2mm;
+  list-style: none;
+  padding: 0;
+  margin: 1mm 0 0;
+  font-size: 8pt;
+}
+
+/* Escaped rather than a literal middot: the stylesheet's charset is not guaranteed. */
+.cv-highlight .project-stack li::after {
+  content: " \00B7";
+}
+
+.cv-highlight .project-stack li:last-child::after {
+  content: "";
+}
+
+/* --- Capabilities, education, contact ------------------------------------- */
+
+.skill-matrix > div,
+.education-list article,
+.credentials-list li {
+  break-inside: avoid;
+  margin: 0 0 2mm;
+}
+
+/* Section lead-ins are site prose, not CV content. */
+.section-heading > p:not(.section-code),
+.projects-section > .section-shell > a,
+.project-list + a,
+.hero-summary + .hero-actions {
+  display: none !important;
+}
+
+.credentials-list {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 8mm;
+}
+
+.skill-matrix {
+  display: block !important;
+}
+
+.skill-matrix > div {
+  break-inside: avoid;
+  margin: 0 0 1.5mm;
+}
+
+.contact-section {
+  display: block !important;
+  break-inside: avoid;
+}
+
+a {
+  text-decoration: none;
+}

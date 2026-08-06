@@ -1509,13 +1509,14 @@ body {
   }
 }
 
+/* Shown only by print.css, which is loaded with media="print". */
+.print-only {
+  display: none;
+}
+
 @media print {
   body {
     background: #fff;
-  }
-
-  .hero-metrics {
-    grid-template-columns: repeat(4, 1fr);
   }
 
   .projects-section,

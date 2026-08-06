@@ -3,6 +3,11 @@ const navigation = document.querySelector(".primary-navigation");
 const navigationLinks = [...document.querySelectorAll(".primary-navigation a[href^='#']")];
 const sections = [...document.querySelectorAll("main section[id]")];
 const siteHeader = document.querySelector(".site-header");
+const printCvButton = document.querySelector(".print-cv");
+
+if (printCvButton) {
+  printCvButton.addEventListener("click", () => window.print());
+}
 
 const closeMenu = () => {
   menuButton.setAttribute("aria-expanded", "false");
