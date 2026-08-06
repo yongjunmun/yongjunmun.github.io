@@ -260,8 +260,9 @@
             <p class="section-code">02 / Engineering evidence</p>
             <h2 id="projects-title">Engineering work and complete repository index</h2>
             <p>
-              All 12 public repositories are represented. The strongest automation, controls,
-              and robotics studies lead; early-stage and side projects are clearly labelled.
+              Every public project repository is represented. The strongest automation,
+              controls, and robotics studies lead; early-stage and side projects are
+              clearly labelled.
             </p>
           </header>
 
@@ -642,6 +643,37 @@
                   rel="noopener noreferrer"
                 >
                   Explore the marketplace <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-row repository-only">
+              <div class="project-copy">
+                <p class="project-context">Personal · Low-latency systems</p>
+                <h3>Limit Order Book &amp; Matching Engine</h3>
+                <p>
+                  A limit order book, price-time-priority matching engine, and NASDAQ
+                  ITCH 5.0 decoder written from scratch in header-only C++23 with no
+                  dependencies. A direct-indexed price array with a two-level bitset
+                  summary cancels in constant time at any queue depth: 142 ns with 100,000
+                  orders resting on one price level, against 198 ns for a random cancel.
+                  Benchmarked in the same process against a textbook std::map book, whose
+                  worst-case add is 148 times slower.
+                </p>
+                <ul class="project-stack" aria-label="Technologies used">
+                  <li>C++23</li>
+                  <li>Lock-free SPSC</li>
+                  <li>NASDAQ ITCH 5.0</li>
+                  <li>873,869 assertions</li>
+                </ul>
+                <p class="project-note">Laptop benchmarks · synthetic feed data · single instrument</p>
+                <a
+                  class="project-link"
+                  href="https://github.com/yongjunmun/Limit-Order-Book-Engine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read the measured benchmarks <span aria-hidden="true">&nearr;</span>
                 </a>
               </div>
             </article>
